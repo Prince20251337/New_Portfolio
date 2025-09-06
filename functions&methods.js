@@ -23,6 +23,7 @@ const aboutOverlay = document.getElementById("aboutOverlay");
 document.getElementById("openAbout").onclick = () => aboutOverlay.style.display = "flex";
 document.getElementById("closeAbout").onclick = () => aboutOverlay.style.display = "none";
 
+// WEEKLY LEARNINGS (Thumbnail -> Detail view)
 document.querySelectorAll('.week-thumb').forEach(img => {
   img.addEventListener('click', () => {
     document.querySelector('.weeks-grid').style.display = 'none';
@@ -34,23 +35,16 @@ document.querySelectorAll('.week-thumb').forEach(img => {
   });
 });
 
+// Back button (go to thumbnails)
 document.getElementById('backToThumbnails').addEventListener('click', () => {
   document.querySelector('.week-detail').style.display = 'none';
   document.querySelector('.weeks-grid').style.display = 'flex';
 });
 
-document.querySelectorAll('.week-thumb').forEach(img => {
-  img.addEventListener('click', () => {
-    document.querySelector('.weeks-grid').style.display = 'none';
-    document.querySelector('.week-detail').style.display = 'block';
+// MOBILE MENU
+const hamburger = document.querySelector(".hamburger");
+const menu = document.querySelector(".menu");
 
-    const week = img.getAttribute('data-week');
-    document.querySelectorAll('.week-content').forEach(content => content.style.display = 'none');
-    document.getElementById(`week${week}`).style.display = 'block';
-  });
-});
-
-document.getElementById('backToThumbnails').addEventListener('click', () => {
-  document.querySelector('.week-detail').style.display = 'none';
-  document.querySelector('.weeks-grid').style.display = 'flex';
+hamburger.addEventListener("click", () => {
+  menu.classList.toggle("active");
 });
