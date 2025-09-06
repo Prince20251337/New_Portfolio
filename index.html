@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio – Prince Badola</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
-  <!-- ✅ Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-  <!-- ======= NAVBAR ======= -->
   <nav class="nav">
     <div class="wrap">
       <a href="#home" class="brand">Portfo<span>lio</span></a>
@@ -26,7 +26,6 @@
     </div>
   </nav>
 
-  <!-- ======= HERO ======= -->
   <header class="hero" id="home">
     <div class="wrap">
       <div>
@@ -42,7 +41,6 @@
 
   <div class="divider"></div>
 
-  <!-- ======= ACTIVITY (Overlay) ======= -->
   <div id="activity" class="activity-overlay">
     <div class="activity-content">
       <button id="closeActivity" class="close-btn">✖</button>
@@ -57,20 +55,19 @@
     </div>
   </div>
 
-  <!-- ======= PROJECT (Overlay) ======= -->
   <div id="projectOverlay" class="activity-overlay">
     <div class="activity-content">
       <button id="closeProject" class="close-btn">✖</button>
       <h2>My Certificates</h2>
-
       <div class="certificates">
-  <figure class="certificate-item">
-    <img src="CA.jpeg" alt="C++ Certificate">
-    <figcaption>C++ Programming Certificate</figcaption>
-  </figure>
-</div>
+        <figure class="certificate-item">
+          <img src="CA.jpeg" alt="C++ Certificate">
+          <figcaption>C++ Programming Certificate</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
 
-  <!-- ======= ABOUT (Overlay) ======= -->
   <div id="aboutOverlay" class="activity-overlay">
     <div class="activity-content about-overlay">
       <button id="closeAbout" class="close-btn">✖</button>
@@ -100,45 +97,39 @@
     </div>
   </div>
 
-  <!-- ======= CONTACT (Overlay) ======= -->
   <div id="contactOverlay" class="activity-overlay">
     <div class="activity-content">
       <button id="closeContact" class="close-btn">✖</button>
       <h2>Contact Me</h2>
-      
       <figure class="contact-thumb">
         <img src="CM.jpg" alt="Prince Badola Thumbnail">
       </figure>
-
       <ul class="contact-list">
-        <li>
-          <i class="fab fa-linkedin"></i>
-          <a href="https://www.linkedin.com/in/prince-badola-751a83258" target="_blank">linkedin.com/in/prince-badola</a>
-        </li>
-        <li>
-          <i class="fas fa-envelope"></i>
-          <a href="mailto:princebadola123@gmail.com">princebadola61@gmail.com</a>
-        </li>
-        <li>
-          <i class="fas fa-phone"></i>
-          <a href="tel:+919528511569">+91 95285 11569 </a>
-        </li>   
+        <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/prince-badola-751a83258" target="_blank">linkedin.com/in/prince-badola</a></li>
+        <li><i class="fas fa-envelope"></i><a href="mailto:princebadola123@gmail.com">princebadola61@gmail.com</a></li>
+        <li><i class="fas fa-phone"></i><a href="tel:+919528511569">+91 95285 11569</a></li>
       </ul>
     </div>
   </div>
 
-  <!-- ======= LEARNINGS (Overlay) ======= -->
-<!-- ======= LEARNINGS (Overlay) ======= -->
-<div id="learningsOverlay" class="activity-overlay">
-  <div class="activity-content">
-    <button id="closeLearnings" class="close-btn">✖</button>
-    <h2>My Weekly Learnings</h2>
+  <div id="learningsOverlay" class="activity-overlay">
+    <div class="activity-content">
+      <button id="closeLearnings" class="close-btn">✖</button>
+      <h2>My Weekly Learnings</h2>
+<div class="week-detail">
+        <button id="backToThumbnails" class="back-btn">⬅</button>
+      <div class="weeks-grid">
+        <img src="week1.jpg" alt="Week 1" class="week-thumb" data-week="1">
+        <img src="week2.png" alt="Week 2" class="week-thumb" data-week="2">
+        <img src="week3.png" alt="Week 3" class="week-thumb" data-week="3">
+        <img src="week4.png" alt="Week 4" class="week-thumb" data-week="4">
+      </div>
 
-    <div class="learnings">
+      <div class="week-detail">
 
-      <div class="week">
-        <h2>Week I</h2>
-        <p>
+        <div id="week1" class="week-content">
+          <h2>Week I</h2>
+          <p>
           I learned how to give a proper self-introduction. I understood how to structure my introduction by including my name, education, achievements, and hobbies. I also learned:
         </p>
         <ul>
@@ -148,12 +139,12 @@
           <li>How to end the introduction politely and professionally.</li>
           <li>These learnings helped improve my communication and presentation skills.</li>
         </ul>
-        <img src="week1.jpg" alt="Thumbnail Image for Week I">
-      </div>
 
-      <div class="week">
-        <h2>Week II</h2>
-        <p>
+        </div>
+
+        <div id="week2" class="week-content">
+          <h2>Week II</h2>
+          <p>
           This week, I focused on identifying my strengths and areas for improvement in communication. 
           I became more confident but also realized I need to work on eye contact and fluency. 
           The activities gave me chances to grow and face challenges that helped improve my skills.
@@ -186,12 +177,11 @@
           <li>Managing time while speaking.</li>
         </ul>
 
-        <img src="week2-thumbnail.jpg" alt="Thumbnail Image for Week II">
-      </div>
+        </div>
 
-      <div class="week">
-        <h2>Week III</h2>
-        <p>
+        <div id="week3" class="week-content">
+          <h2>Week III</h2>
+          <p>
           In Week III, we created a <b>role play on a surprise birthday</b>. During this activity, I learned:
         </p>
         <ul>
@@ -201,12 +191,11 @@
           <li>To handle unexpected situations and respond confidently.</li>
           <li>That role play improves imagination, speaking fluency, and confidence in front of an audience.</li>
         </ul>
-        <img src="week3-thumbnail.jpg" alt="Thumbnail Image for Week III">
-      </div>
+        </div>
 
-      <div class="week">
-        <h2>Week IV</h2>
-        <p>
+        <div id="week4" class="week-content">
+          <h2>Week IV</h2>
+          <p>
           In Week IV, I performed the role play activity on a <b>surprise birthday celebration</b>. 
           This was a fun and interactive session where we acted out different roles in the scenario. 
           Through this role play, I learned:
@@ -218,13 +207,13 @@
           <li>The value of creativity and imagination in making the role play interesting.</li>
           <li>That practicing role play helps improve fluency, quick thinking, and stage confidence.</li>
         </ul>
-        <img src="week4-thumbnail.jpg" alt="Thumbnail Image for Week IV">
-      </div>
+        </div>
 
-    </div>
+      </div>
+    
   </div>
-</div>
-  <!-- ✅ Attach JS file -->
+
   <script src="functions&methods.js"></script>
 </body>
+
 </html>

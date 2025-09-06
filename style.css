@@ -165,3 +165,95 @@ a{color:inherit;text-decoration:none}
   margin-top: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
+:root {
+  --bg: #0e0e10;
+  --card: #1a1a1f;
+  --text: #e7e7ea;
+  --muted: #b9b9c2;
+  --accent: #ff2e6a;
+  --maxw: 1200px;
+}
+
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.activity-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+}
+.activity-overlay.active {
+  display: flex;
+}
+
+.activity-content {
+  background: var(--card);
+  padding: 30px;
+  border-radius: 16px;
+  max-width: 1000px;
+  width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.weeks-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.week-thumb {
+  width: 150px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.week-thumb:hover {
+  transform: scale(1.05);
+}
+
+.week-detail {
+  display: none;
+}
+
+.week-content {
+  display: none;
+}
+
+.back-btn {
+  background: var(--accent);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
