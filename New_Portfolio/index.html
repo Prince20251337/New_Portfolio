@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio – Prince Badola</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="wrap">
+      <a href="#home" class="brand">Portfo<span>lio</span></a>
+      <div class="menu">
+        <a href="#home" class="nav-link" data-target="home">Home</a>
+        <a href="#" class="nav-link" data-target="activity">Activity</a>
+        <a href="#" class="nav-link" data-target="learningsOverlay">Learnings</a>
+        <a href="#" class="nav-link" data-target="projectOverlay">Project</a>
+        <a href="#" class="nav-link" data-target="aboutOverlay">About Me</a>
+        <a href="#" class="nav-link" data-target="contactOverlay">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="home">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow">Hello, my name is</div>
+        <h1>PRINCE <span class="accent">BADOLA</span></h1>
+        <p class="lead">SECTION : F2</p>
+      </div>
+      <figure class="hero-figure">
+        <img src="pb2.jpeg" alt="Portrait" />
+      </figure>
+    </div>
+  </header>
+
+  <div class="divider"></div>
+
+  <!-- ACTIVITIES -->
+  <div id="activity" class="activity-overlay">
+    <div class="activity-content">
+      <button class="close-btn">✖</button>
+      <h2>My Activities</h2>
+      <ul>
+        <li>
+          <video controls poster="ip.jpeg">
+            <source src="i.mp4" type="video/mp4">
+          </video>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PROJECT -->
+  <div id="projectOverlay" class="activity-overlay">
+    <div class="activity-content">
+      <button class="close-btn">✖</button>
+      <h2>My Certificates</h2>
+      <div class="certificates">
+        <figure class="certificate-item">
+          <img src="ca.jpeg" alt="C++ Certificate">
+          <figcaption>C++ Programming Certificate</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <div id="aboutOverlay" class="activity-overlay">
+    <div class="activity-content about-overlay">
+      <button class="close-btn">✖</button>
+      <h2>About Me</h2>
+      <div class="about-flex">
+        <figure class="about-figure">
+          <img src="pb.jpg" alt="About portrait" />
+        </figure>
+        <p class="copy">
+          My name is Prince Badola, and I am from Dehradun, Uttarakhand. I am currently pursuing a Bachelor of Technology in Computer Science from Graphic Era University. Prior to this, I completed a Diploma in Computer Science from the same university, and my secondary education from Canfield High School (CBSE Board).<br><br>
+          I have experience working on small freelance assignments and academic projects. One of my key achievements includes winning a certificate in the "Best Out of Waste" competition. I have also earned a C++ programming certification and developed a project based on Object-Oriented Programming (OOP).<br><br>
+          Regarding my family background, we are four members: my father, mother, younger sister, and me.<br><br>
+          My hobbies include coding and learning new technologies during my free time.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div id="contactOverlay" class="activity-overlay">
+    <div class="activity-content">
+      <button class="close-btn">✖</button>
+      <h2>Contact Me</h2>
+      <figure class="contact-thumb">
+        <img src="CM.jpg" alt="Prince Badola Thumbnail">
+      </figure>
+      <ul class="contact-list">
+        <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/prince-badola-751a83258" target="_blank">linkedin.com/in/prince-badola</a></li>
+        <li><i class="fas fa-envelope"></i><a href="mailto:princebadola61@gmail.com">princebadola61@gmail.com</a></li>
+        <li><i class="fas fa-phone"></i><a href="tel:+919528511569">+91 95285 11569</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- LEARNINGS -->
+  <div id="learningsOverlay" class="activity-overlay">
+    <div class="activity-content">
+      <button class="close-btn">✖</button>
+      <h2>My Weekly Learnings</h2>
+
+      <!-- Thumbnails (default view) -->
+      <div class="learning-thumbnails">
+        <div class="thumbnail" data-week="1">
+          <img src="w1.png" alt="Week 1 Thumbnail">
+          <p>Week I</p>
+        </div>
+        <div class="thumbnail" data-week="2">
+          <img src="w2.png" alt="Week 2 Thumbnail">
+          <p>Week II</p>
+        </div>
+        <div class="thumbnail" data-week="3">
+          <img src="w3.png" alt="Week 3 Thumbnail">
+          <p>Week III</p>
+        </div>
+        <div class="thumbnail" data-week="4">
+          <img src="w4.png" alt="Week 4 Thumbnail">
+          <p>Week IV</p>
+        </div>
+      </div>
+
+      <!-- Week Learnings (hidden initially) -->
+      <div class="weekly-learnings-list">
+
+        <div class="week-detail" id="week-1-detail">
+          <button class="back-btn">⬅ Back</button>
+          <h3>Week I</h3>
+          <p>I learned how to give a proper self-introduction...</p>
+          <ul>
+            <li>The importance of speaking with confidence.</li>
+            <li>How to use good body language and eye contact.</li>
+            <li>Basics of verbal and non-verbal communication.</li>
+            <li>How to end the introduction politely and professionally.</li>
+            <li>These learnings helped improve my communication and presentation skills.</li>
+          </ul>
+        </div>
+
+        <div class="week-detail" id="week-2-detail">
+          <button class="back-btn">⬅ Back</button>
+          <h3>Week II</h3>
+          <p>This week, I focused on identifying my strengths and areas of improvement.  
+             I performed a <strong>SWOC Analysis</strong> (Strengths, Weaknesses, Opportunities, Challenges) to better understand myself.</p>
+          <ul>
+            <li><strong>Strengths:</strong> Consistent learning habits, good problem-solving approach, and strong grasp of fundamentals.</li>
+            <li><strong>Weaknesses:</strong> Need to improve time management and sometimes struggle with staying focused for long durations.</li>
+            <li><strong>Opportunities:</strong> Exploring new technologies, participating in coding challenges, and contributing to projects that enhance skills.</li>
+            <li><strong>Challenges:</strong> Balancing multiple tasks effectively and overcoming procrastination tendencies.</li>
+          </ul>
+        </div>
+
+        <div class="week-detail" id="week-3-detail">
+          <button class="back-btn">⬅ Back</button>
+          <h3>Week III</h3>
+          <p>In Week III, we created a role play on a surprise birthday. During this activity, I learned:</p>
+          <ul>
+            <li>How to coordinate and communicate effectively in a group.</li>
+            <li>The importance of teamwork and creativity in role play.</li>
+            <li>How to express emotions naturally while performing.</li>
+            <li>To handle unexpected situations and respond confidently.</li>
+            <li>That role play improves imagination, speaking fluency, and confidence in front of an audience.</li>
+          </ul>
+        </div>
+
+        <div class="week-detail" id="week-4-detail">
+          <button class="back-btn">⬅ Back</button>
+          <h3>Week IV</h3>
+          <p>In Week IV, I performed the role play activity on a surprise birthday celebration. This was a fun and interactive session where we acted out different roles in the scenario. Through this role play, I learned:</p>
+          <ul>
+            <li>How to express myself more confidently in front of others.</li>
+            <li>The importance of clear voice, expressions, and gestures while acting.</li>
+            <li>How to work as a team and support each other during the performance.</li>
+            <li>The value of creativity and imagination in making the role play interesting.</li>
+            <li>That practicing role play helps improve fluency, quick thinking, and stage confidence.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="functions&methods.js"></script>
+</body>
+</html>
