@@ -27,10 +27,13 @@ document.getElementById("closeAbout").onclick = () => aboutOverlay.style.display
 document.querySelectorAll('.week-thumb').forEach(img => {
   img.addEventListener('click', () => {
     document.querySelector('.weeks-grid').style.display = 'none';
+    document.querySelector('.week-detail').classList.remove('hidden');
     document.querySelector('.week-detail').style.display = 'block';
 
     const week = img.getAttribute('data-week');
-    document.querySelectorAll('.week-content').forEach(content => content.style.display = 'none');
+    document.querySelectorAll('.week-content').forEach(content => {
+      content.style.display = 'none';
+    });
     document.getElementById(`week${week}`).style.display = 'block';
   });
 });
@@ -38,7 +41,7 @@ document.querySelectorAll('.week-thumb').forEach(img => {
 // Back button (go to thumbnails)
 document.getElementById('backToThumbnails').addEventListener('click', () => {
   document.querySelector('.week-detail').style.display = 'none';
-  document.querySelector('.weeks-grid').style.display = 'flex';
+  document.querySelector('.weeks-grid').style.display = 'grid'; // ✅ FIXED HERE
 });
 
 // MOBILE MENU
