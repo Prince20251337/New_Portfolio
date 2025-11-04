@@ -11,23 +11,26 @@
 </head>
 
 <body>
+  <!-- CERTIFICATE MODAL (HIDDEN INITIALLY) -->
+  <div class="modal" id="certificateModal">
+    <button class="close-modal" id="closeModal">✖</button>
+    <img id="modalImg" src="" alt="Full certificate">
+  </div>
   <!-- NAVIGATION -->
-  <nav class="nav">
+  <nav class="nav" aria-label="Main navigation">
     <div class="wrap">
       <a href="#home" class="brand">Portfo<span>lio</span></a>
       <div class="menu">
         <a href="#home">Home</a>
-        <a href="#" id="openActivity">Activity</a>
+        <a href="#" id="openActivity">Activity/Assignment</a>
         <a href="#" id="openLearnings">Learnings</a>
         <a href="#" id="openProject">Project</a>
         <a href="#" id="openAbout">About Me</a>
         <a href="#" id="openContact">Contact</a>
       </div>
-      <!-- Mobile menu button -->
-      <button class="hamburger"><i class="fas fa-bars"></i></button>
+      <button class="hamburger" aria-label="Open menu"><i class="fas fa-bars"></i></button>
     </div>
   </nav>
-
   <!-- HERO -->
   <header class="hero" id="home">
     <div class="wrap">
@@ -35,19 +38,16 @@
         <div class="eyebrow">Hello, my name is</div>
         <h1>PRINCE <span class="accent">BADOLA</span></h1>
         <p class="lead">SECTION : F2</p>
+        <p class="lead">Roll No. 76</p>
       </div>
-      <figure class="hero-figure">
-        <img src="pb2.jpeg" alt="Portrait" />
-      </figure>
+      <figure class="hero-figure"><img src="pb2.jpeg" alt="Portrait" /></figure>
     </div>
   </header>
-
   <div class="divider"></div>
-
   <!-- ACTIVITY -->
   <div id="activity" class="activity-overlay">
     <div class="activity-content">
-      <button id="closeActivity" class="close-btn">✖</button>
+      <button id="closeActivity" class="close-btn" aria-label="Close">✖</button>
       <h2>My Activities</h2>
       <ul>
         <li>
@@ -55,62 +55,80 @@
             <source src="i.mp4" type="video/mp4">
           </video>
         </li>
+        <li>
+            <h1>Assignment : 4</h1>
+          <iframe src="./Prince Badola.pdf" class="pdf-frame"></iframe>
+        </li>
       </ul>
     </div>
   </div>
-
-  <!-- PROJECT -->
+  <!-- PROJECT / CERTIFICATES -->
   <div id="projectOverlay" class="activity-overlay">
     <div class="activity-content">
-      <button id="closeProject" class="close-btn">✖</button>
+      <button id="closeProject" class="close-btn" aria-label="Close">✖</button>
       <h2>My Certificates</h2>
+      <div class="cert-hint">Click any certificate image below to view it in full size.</div>
       <div class="certificates">
         <figure class="certificate-item">
           <img src="CA.jpeg" alt="C++ Certificate">
           <figcaption>C++ Programming Certificate</figcaption>
         </figure>
+        <figure class="certificate-item">
+          <img src="am.jpeg" alt="Achievers' Meet">
+          <figcaption>Achievers' Meet</figcaption>
+        </figure>
+        <figure class="certificate-item">
+          <img src="ww1.png" alt="Best out of waste competition">
+          <figcaption>Best out of waste competition</figcaption>
+        </figure>
+        <figure class="certificate-item">
+          <img src="b.jpeg" alt="NSS B">
+          <figcaption>NSS B</figcaption>
+        </figure>
+        <figure class="certificate-item">
+          <img src="c.jpeg" alt="NSS c">
+          <figcaption>NSS C</figcaption>
+        </figure>
+        <figure class="certificate-item">
+          <img src="aam.jpeg" alt="Annual Athletic Meet">
+          <figcaption>Annual Athletic Meet</figcaption>
+        </figure>
+        <figure class="certificate-item">
+          <img src="mcd.jpeg" alt="Mission clean Doon">
+          <figcaption>Mission clean Doon</figcaption>
+        </figure>
+        <figure class="certificate-item">
+          <img src="uroc.jpeg" alt="Unity run & oath ceremony">
+          <figcaption>Unity run & oath ceremony</figcaption>
+        </figure>
       </div>
     </div>
   </div>
-
   <!-- ABOUT -->
   <div id="aboutOverlay" class="activity-overlay">
     <div class="activity-content about-overlay">
-      <button id="closeAbout" class="close-btn">✖</button>
+      <button id="closeAbout" class="close-btn" aria-label="Close">✖</button>
       <h2>About Me</h2>
       <div class="about-flex">
         <figure class="about-figure">
           <img src="pb.jpg" alt="About portrait" />
         </figure>
         <p class="copy">
-          My name is Prince Badola, and I am from Dehradun, Uttarakhand. 
-          I am currently pursuing a Bachelor of Technology in Computer Science 
-          from Graphic Era University. Prior to this, I completed a Diploma in 
-          Computer Science from the same university, and my secondary education 
-          from Canfield High School (CBSE Board).<br><br>
-
-          I have experience working on small freelance assignments and academic 
-          projects. One of my key achievements includes winning a certificate in 
-          the "Best Out of Waste" competition. I have also earned a C++ programming 
-          certification and developed a project based on Object-Oriented Programming (OOP).<br><br>
-
-          Regarding my family background, we are four members: my father, mother, 
-          younger sister, and me.<br><br>
-
+          My name is Prince Badola, and I am from Dehradun, Uttarakhand.<br>
+          I am currently pursuing a Bachelor of Technology in Computer Science from Graphic Era University.<br>
+          Prior to this, I completed a Diploma in Computer Science from the same university and my secondary education from Canfield High School (CBSE Board).<br><br>
+          I have experience working on small freelance assignments and academic projects. One of my key achievements includes winning a certificate in the "Best Out of Waste" competition. I have also earned a C++ programming certification and developed a project based on Object-Oriented Programming (OOP).<br><br>
+          Regarding my family background, we are four members: my father, mother, younger sister, and me.<br><br>
           My hobbies include coding and learning new technologies during my free time.
         </p>
       </div>
     </div>
   </div>
-
   <!-- CONTACT -->
   <div id="contactOverlay" class="activity-overlay">
     <div class="activity-content">
-      <button id="closeContact" class="close-btn">✖</button>
+      <button id="closeContact" class="close-btn" aria-label="Close">✖</button>
       <h2>Contact Me</h2>
-      <figure class="contact-thumb">
-        <img src="CM.jpg" alt="Prince Badola Thumbnail">
-      </figure>
       <ul class="contact-list">
         <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/prince-badola-751a83258" target="_blank">linkedin.com/in/prince-badola</a></li>
         <li><i class="fas fa-envelope"></i><a href="mailto:princebadola123@gmail.com">princebadola61@gmail.com</a></li>
@@ -118,28 +136,24 @@
       </ul>
     </div>
   </div>
-
   <!-- LEARNINGS -->
-<div id="learningsOverlay" class="activity-overlay">
-  <div class="activity-content">
-    <button id="closeLearnings" class="close-btn">✖</button>
-    <h2>My Weekly Learnings</h2>
-
-    <!-- Week Thumbnails -->
-    <div class="weeks-grid">
-      <img src="W1.png" alt="Week 1" class="week-thumb" data-week="1">
-      <img src="w2.png" alt="Week 2" class="week-thumb" data-week="2">
-      <img src="w3.png" alt="Week 3" class="week-thumb" data-week="3">
-      <img src="w4.png" alt="Week 4" class="week-thumb" data-week="4">
-      <img src="w5.png" alt="Week 5" class="week-thumb" data-week="5">
-      <img src="w6.png" alt="Week 6" class="week-thumb" data-week="6">
-
-    </div>
-
-    <!-- Week Details (Hidden initially) -->
-    <div class="week-detail hidden">
-      <button id="backToThumbnails" class="back-btn">⬅ Back</button>
-
+  <div id="learningsOverlay" class="activity-overlay">
+    <div class="activity-content">
+      <button id="closeLearnings" class="close-btn" aria-label="Close">✖</button>
+      <h2 class="main-heading">Learnings</h2>
+      <div class="weeks-grid">
+        <img src="W1.png" alt="Week 1" class="week-thumb" data-week="1">
+        <img src="w2.png" alt="Week 2" class="week-thumb" data-week="2">
+        <img src="w3.png" alt="Week 3" class="week-thumb" data-week="3">
+        <img src="w4.png" alt="Week 4" class="week-thumb" data-week="4">
+        <img src="w5.png" alt="Week 5" class="week-thumb" data-week="5">
+        <img src="w6.png" alt="Week 6" class="week-thumb" data-week="6">
+        <img src="w7.png" alt="Week 7" class="week-thumb" data-week="7">
+        <img src="w8.png" alt="Week 8" class="week-thumb" data-week="8">
+      </div>
+      <div class="week-detail hidden">
+        <button id="backToThumbnails" class="back-btn" aria-label="Back">⬅ Back</button>
+        <!-- Add week-content here -->
       <!-- Week 1 -->
       <div id="week1" class="week-content">
         <h2>Week I</h2>
@@ -270,11 +284,42 @@
     Overall, learning about these topic types and strategies has improved my understanding of how to prepare and deliver effective speeches depending on the purpose and audience.
   </p>
 </div>
-
-
+<div id="week7" class="week-content">
+  <h2>Week VII</h2>
+  <p>
+    In <b>Week Seven</b>, I learned about the <b>Art of Conversation</b>, which focused on developing effective communication skills through <b>small talk</b> and <b>telephone etiquettes</b>. This week helped me understand how small talk can make interactions more comfortable and how proper telephone etiquettes create a positive impression in professional and personal settings.
+  </p>
+  <ul>
+    <li>Understood what small talk is and how it helps in starting and maintaining conversations smoothly.</li>
+    <li>Learned why small talk is important in building relationships and creating friendly communication.</li>
+    <li>Explored various applications of small talk in everyday interactions, interviews, and workplace communication.</li>
+    <li>Studied <b>telephone etiquettes</b> and their importance in ensuring polite, clear, and professional communication over calls.</li>
+    <li>Understood the do’s and don’ts of telephone communication — such as greeting properly, speaking clearly, and avoiding background noise or distractions.</li>
+    <li>Participated in a <b>simulation role play</b> activity to practice both small talk and telephone etiquettes in real-life situations.</li>
+  </ul>
+  <p>
+    Overall, this week improved my ability to communicate effectively, helped me practice professional behavior over the phone, and boosted my confidence in conversational skills through role play exercises.
+  </p>
+</div>
+<div id="week8" class="week-content">
+  <h2>Week VIII</h2>
+  <p>
+    In <b>Week Eight</b>, I revised and reflected on all the topics learned in the previous weeks. This revision helped me strengthen my understanding and improve my communication skills. I reviewed:
+  </p>
+  <ul>
+    <li>How to give a confident and structured self-introduction.</li>
+    <li>The importance of body language, tone, and expressions in communication.</li>
+    <li>My strengths and weaknesses in public speaking and ways to improve them.</li>
+    <li>How to work effectively in groups through role plays and activities.</li>
+    <li>The key elements of an effective presentation — from design to delivery.</li>
+    <li>Different types of public speaking topics and how to prepare for them.</li>
+  </ul>
+  <p>
+    By revising all these concepts, I became more confident in speaking, presenting, and expressing my ideas clearly. It also helped me understand how continuous practice leads to personal and professional growth.
+  </p>
+</div> 
     </div>
   </div>
-</div>
   <script src="functions&methods.js"></script>
 </body>
 </html>
